@@ -88,7 +88,7 @@ body{
 #cvc{
   position: absolute;
   right: 3.5rem;
-  top: 24.5rem;
+  top: 6.5rem;
   color: var(--Light-grayish-violet);
 }
 /* lado direito */
@@ -145,54 +145,44 @@ input:focus{
  
 }
 .grid3{
- 
+  display: flex;
+  flex-direction: column;}
+   
+
+.grid4{
   display: flex;
   flex-direction: column;
-}
-.grid4{
- display: flex;
- flex-direction: column;
- grid-column:2 span;
+  grid-column: 1 span;
 }
 .informacao-cartao{
-  display: flex;
-  flex-direction: row;
-  grid-column: 2 span;
-  
-  
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-column:  2 span;
 }
-
 #cartao-data{
-    display: flex;
-    flex-direction: column;
-    grid-column: 2 span;
-    width:100%;
-    
-    
-
-}
-#cartao-data .dois_inputs{
-  display: flex ;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 span;
   
-  
-  
-}
-.dois_inputs div{
-  flex-direction: row;
 }
 .divs{
-  width: 50%;
-  display: flex;
-  flex-direction: row;
+  width: 50px;
+}
+.divs1{
+  width: 50px;
+}
+
+#cartao-data .dois_inputs{
+display:flex;
+}
+.dois_inputs {
+display: flex;
 }
 
 #cartao-data div input{
-  width: 60px;
-  margin-inline: .5rem;
-  margin-left: 0;
-  
-  background-color: blueviolet;
-
+width: 70px;
+margin-inline: .5rem;
+margin-left: 0;
 }
 #cvc-sec{
   width: 100%;

@@ -1,15 +1,22 @@
-const cardNumber = document.getElementById("Number");
+const cardNumber = document.getElementById("number");
 const numberInp = document.getElementById("numero-cartao")
+
 const nameInp = document.getElementById("nome-usuario");
 const cardName = document.getElementById("name");
+
 const cardMonth = document.getElementById("mes");
 const cardYear = document.getElementById("ano");
+
 const monthInp = document.getElementById("cartao-mes");
 const yearInp = document.getElementById("cartao-ano");
+
 const cardCvc = document.getElementById("cvc");
 const cvcInp = document.getElementById("cvc-sec");
-const submitBtn = document.getElementById("submit_btn");
+
+const submitBtn = document.getElementById("btn-sub");
+
 const compeleted = document.querySelector(".thank");
+
 const form = document.querySelector("form");
 
 function setCardNumber(e) {

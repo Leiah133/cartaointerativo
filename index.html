@@ -50,30 +50,26 @@
           <div class="grid2">
             <label for="numero-cartao">Card Number</label>
             <input type="number"
-              oninput="if (this.value.lenght > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" id="numero-cartao" required>
+              pattern="\d*"
+              min="16" max="16" placeholder="1234 5678 9123 0000" id="numero-cartao" required>
           </div>
           <div class="informacao-cartao">
             <div id="cartao-data">
-                <label for="data">Exp. Date (MM/YY)</label>
-                <div class="dois-inputs">
-                  <div class="divs">
-                    <input type="number" placeholder="MM"
-                      oninput="if (this.value.lenght > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      minlength="2" maxlength="2" id="cartao-mes" required>
-                  </div>
-                  <div >
-                    <input type="number" placeholder="YY"
-                      oninput="if (this.value.lenght > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      minlength="2" maxlength="2" id="cartao-ano" required>
-                  </div>
-                </div>
+             <label for="data">Exp. Date (MM/YY)</label>
+              <div class="dois-inputs">
+                <input type="number" placeholder="MM"
+                oninput="if (this.value.lenght > this.min) this.value = this.value.slice(0, this.max);"
+                min="2" max="2" id="cartao-mes" required>
+                <input type="number" placeholder="YY"
+                oninput="if (this.value.lenght > this.min) this.value = this.value.slice(0, this.max);"
+                min="2" max="2" id="cartao-ano" required>
+              </div>
             </div>
             <div class="grid4">
               <label for="cvc-sec">CVC</label>
               <input type="number"
-                oninput="if (this.value.lenght > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                minlength="3" maxlength="3" placeholder="e.g. 123" id="cvc-sec" required>
+                oninput="if (this.value.lenght > this.min) this.value = this.value.slice(0, this.max);"
+                min="3" max="3" placeholder="e.g. 123" id="cvc-sec" required>
             </div>
           </div>
           <button type="submit" id="btn-sub"> Confirm</button>
